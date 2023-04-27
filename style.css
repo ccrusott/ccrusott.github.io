@@ -93,12 +93,14 @@ nav a{
 
 
 .intro{
-    width: 100%;
+    width: calc(100%-2rem);
     display: flex;
     justify-content: center;
     align-items: center;
     height: auto;
     margin-bottom: 6rem;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .intro-wrapper{
@@ -107,9 +109,11 @@ nav a{
     justify-content: center;
     align-items: flex-start;
     flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .intro h1{
+    font-size: 1rem;
     color: #64FFDA;
     font-family: 'Source Code Pro', monospace;
 }
@@ -134,7 +138,7 @@ nav a{
 .intro a{
     color:#64FFDA;
     font-family: 'Teko', sans-serif;
-    margin-right: 5px;
+    
     font-size: 1.25rem;
 }
 
@@ -150,11 +154,11 @@ nav a{
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    width: 100%;
+    width: calc(100%-2rem);
     flex-direction: column;
     margin-top: 6.25rem;
     height: auto;
-    margin-bottom: 3.125rem;
+    margin-bottom: 15rem;
 }
 
 .aboutmain h2{
@@ -164,14 +168,13 @@ nav a{
 .abouttitle{
     font-family: 'Source Code Pro', monospace;
     width: 100%;
-    height: auto;
-    text-align: center;
-    
+    height: auto; 
+    grid-column-start: 2;
 }
 
 .abouttitle a{
     color:#64FFDA;
-    font-size: 40px;
+    font-size: 2.5rem;
     font-family: 'Teko', sans-serif;
 }
 .about-wrapper{
@@ -188,13 +191,14 @@ nav a{
         align-items: center;
         text-align: center;
         flex-direction: column;
+        flex-wrap: wrap;
     }
 }
     
 .aboutp1{
     display: flex;
     width: 500px;
-    font-size: 18px;
+    font-size: 1.125vw;
     margin-top: 20px;
     word-spacing: 1px;
     line-height: 1.5;
@@ -222,7 +226,7 @@ nav a{
     height: 175px;
     width: 500px;
     grid-column-start: 2;
-    grid-row-start: 4;
+    grid-row-start: 5;
     
 }
 .aboutp2 a{
