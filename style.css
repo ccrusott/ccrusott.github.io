@@ -3,7 +3,6 @@
     background-color:#0a192f;
     color: #CCDCF6;
     box-sizing: border-box;
-    font-size: 1rem;
 }
 
 .splash{
@@ -43,10 +42,13 @@
     opacity: 0;
     animation: fadeIn 1s ease-in forwards;
 }
-
+body{
+    width: 100%;
+    height: auto;
+}
 nav{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     height: auto;
     align-items: center;
@@ -61,7 +63,6 @@ nav{
     .icon-c{
         display: none;
     }
-    
 }
 
 nav a{
@@ -76,7 +77,19 @@ nav a{
     margin-right: 2.75rem;
     
 }
-
+@media only screen and (max-width: 376px){
+    .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-right: 0;
+    }
+    nav{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+}
 #button {
     font-family: 'Teko', sans-serif;
     font-size: 1.25rem;
@@ -89,7 +102,7 @@ nav a{
 }
 
 .intro{
-    width: calc(100%-2rem);
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,6 +113,8 @@ nav a{
 }
 
 .intro-wrapper{
+    width: 100%;
+    height: auto;
     text-align: start;
     display: flex;
     justify-content: center;
@@ -109,6 +124,7 @@ nav a{
 }
 
 .intro h1{
+    width: 100%;
     font-size: 1rem;
     color: #64FFDA;
     font-family: 'Source Code Pro', monospace;
@@ -125,7 +141,24 @@ nav a{
     color: #8892B0;
     font-family: 'Source Code Pro', monospace;
 }
-
+@media only screen and (max-width: 376px){
+    .intro h3{
+        font-size: 3rem;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .intro h2{
+        font-size: 3.5rem;
+        text-align: center;
+    }
+    .intro h1{
+        font-size: 0.75rem;
+        text-align: center;
+    }
+    .intro p{
+        text-align: center;
+    }
+}
 .intro p{
     color:#8892B0;
     font-family: 'Source Code Pro', monospace;
@@ -193,23 +226,37 @@ nav a{
 .aboutp1{
     display: flex;
     width: 500px;
-    font-size: 1.125vw;
-    margin-top: 20px;
+    height: auto;
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
     word-spacing: 1px;
     line-height: 1.5;
     font-family: 'Source Code Pro', monospace;
     grid-column-start: 2;
     
-}  
+}
+@media only screen and (max-width: 499px){
+    .aboutp1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+}
 .aboutp1 p{
     color:#8892B0;
-    margin-bottom: 50px;
+    margin-bottom: 3.125rem;
+    width: 100%;
 }
 
 .aboutp1 a{
     color:#64FFDA;
     font-family: 'Teko', sans-serif;
-    font-size: 22px;
+    font-size: 1.375rem;
     letter-spacing: 2px;
     
 }
@@ -218,15 +265,26 @@ nav a{
     border: 2px solid #64FFDA;
     border-radius: 10px;
     padding: 5px;
-    height: 175px;
-    width: 500px;
+    height: 10.938rem;
+    width: 31.25rem;
     grid-column-start: 2;
     grid-row-start: 5;
     
 }
+@media only screen and (max-width: 499px){
+    .aboutp2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+    }
+}
 .aboutp2 a{
     color:#64FFDA;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Teko', sans-serif;
 }
 .aboutp2 p{
@@ -243,7 +301,7 @@ nav a{
 ul li{
     color:#8892B0;
     font-family: 'Source Code Pro', monospace;
-    margin-left: 50px;
+    margin-left: 3.125rem;
 }
 
 ul li::before{
@@ -289,7 +347,6 @@ ul li::before{
 
 .hr2{
     background-image: linear-gradient(to right, white, #0a192f, transparent);
-    height: 8px;
     border: 0;
     height: 1px;
     width: 100%;
