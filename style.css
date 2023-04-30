@@ -48,7 +48,7 @@ body{
 }
 nav{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
     height: auto;
     align-items: center;
@@ -72,7 +72,7 @@ nav a{
 
 .links{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin-right: 2.75rem;
     
@@ -102,7 +102,7 @@ nav a{
 }
 
 .intro{
-    width: 100%;
+    width: fit-content;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -113,7 +113,7 @@ nav a{
 }
 
 .intro-wrapper{
-    width: 100%;
+    width: fit-content;
     height: auto;
     text-align: start;
     display: flex;
@@ -121,6 +121,7 @@ nav a{
     align-items: flex-start;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-left: 12rem;
 }
 
 .intro h1{
